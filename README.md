@@ -1,19 +1,22 @@
 # threejs-gltf-template
-A simple GLTF/GLB Three JS template
+A simple Draco-capable GLTF/GLB Three JS template
+
+Forked from the original to add basic DRACO compression support for a friend.
 
 ## Features
 
 * Gradient background with texture noise
 * Orbit controller
+* Draco compression support
 
 <img src="image.jpg" />
 
 ## Usage
 
-Replace the file name cube.glb with your own file
+Replace the models with your own files
 
 ```javascript
-loader.load('cube.glb', handle_load);
+loader.load('<my_model.glb>', handle_load);
 ```
 
 Adjust the camera field of view (FOV) to see more of less of your model in the screen. To change the FOV update the number 24 in the code below.
